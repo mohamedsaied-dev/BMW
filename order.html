@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="CS 250 Lab 7: JavaScript Form Validation" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/master.css">
+  <title></title>
+  <script type="text/javascript" src="script.js"></script>
+</head>
+<body id="register">
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" class="act">Home</a>
+    <a class="dif" href="news.html">News</a>
+    <a class="dif" href="future-vehicles.html">Discover Future</a>
+    <a class="dif" href="Products.html">Our Products</a>
+    <a class="dif" href="order.html">Register&Order</a>
+    <a href="javascript:void(0);" class="icon" onclick="fun()">
+      <i class="fa fa-bars"></i>
+    </a>
+    <p id="bm" ><img id="lo" src="logo.svg" alt="logo"><span id="b">B</span><span id="m-or">M</span><span id="w">W</span></p>
+  </div>
+  <div class="container-form" id="order-form">
+    <form id="myform"  onsubmit="return validation(event)"  autocomplete="on">
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">First Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="fname" name="firstname" placeholder="Your first name.." required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="lname">Last Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="mail">E-mail</label>
+        </div>
+        <div class="col-75">
+          <input type="email" id="mail" name="mail" placeholder="Your e-mail.." required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="pass">Password</label>
+        </div>
+        <div class="col-75">
+          <input type="password" id="pass" name="pass" placeholder="Your password.." required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="pass-confirm">Confirm Password</label>
+        </div>
+        <div class="col-75">
+          <input type="password" id="pass-confirm" name="pass-confirm" placeholder="Confirm your password.." required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="phone">Phone Number</label>
+        </div>
+        <div class="col-75">
+          <input type="tel" id="phone" name="phone" placeholder="Your mopile phone number.." pattern="[0-9]{11}" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="address">Address</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="address" name="address" placeholder="Your address.." required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="gender">Gender</label>
+        </div>
+        <div class="col-75">
+          <select id="gender" name="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
+        </div>
+      </div>
+      <div class="row sub">
+        <input type="submit" value="Submit" id="submit">
+      </div>
+    </form>
+  </div>
+</body>
+</html>
