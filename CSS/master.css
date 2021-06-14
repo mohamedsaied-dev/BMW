@@ -285,7 +285,7 @@ div.gallery-pro:hover {
 }
 div.gallery-pro img {
   width: 100%;
-  height: 310px;
+  height: 300px;
   transition: transform 1.5s;
 }
 div.gallery-pro img:hover{
